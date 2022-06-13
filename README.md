@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/MG71645/tip-calculator](https://github.com/MG71645/tip-calculator)
+- Live Site URL: [https://mg-tip-calculator.herokuapp.com](https://mg-tip-calculator.herokuapp.com)
 
 ## Built with
 
