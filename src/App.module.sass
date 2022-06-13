@@ -1,0 +1,134 @@
+@import "styles/responsive"
+@import "styles/colors"
+
+.container
+  min-height: 100vh
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 64px 0
+
+  @include mobile
+    padding: 32px 0 0
+
+.logo
+  font-size: 24px
+  letter-spacing: 10px
+  color: $CYAN_VERY_DARK
+  margin-bottom: 64px
+
+  @include mobile
+    margin-bottom: 32px
+
+.form
+  background: white
+  width: 100%
+  max-width: 900px
+  border-radius: 24px
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-gap: 32px
+  padding: 32px
+
+  @include mobile
+    grid-template-columns: 1fr
+    padding: 24px 24px 32px
+    border-radius: 24px 24px 0 0
+
+.fields
+  padding: 16px
+  display: grid
+  grid-gap: 32px
+
+  @include mobile
+    padding: 8px
+
+.options
+  margin-top: 16px
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-gap: 12px
+
+  @include mobile
+    grid-template-columns: 1fr 1fr
+    grid-gap: 16px
+
+.option
+  cursor: pointer
+  height: 48px
+  background: $CYAN_VERY_DARK
+  border-radius: var(--input-border-radius)
+  font-size: 24px
+  color: white
+  display: flex
+  justify-content: center
+  align-items: center
+
+  &:hover
+    background: $CYAN
+    color: $CYAN_VERY_DARK
+
+  &[data-checked="true"]
+    background: $CYAN_STRONG
+    color: $CYAN_VERY_DARK
+
+.custom
+  -webkit-appearance: none
+  height: var(--input-height)
+  width: 100%
+  border-radius: var(--input-border-radius)
+  background: $CYAN_VERY_LIGHT_GRAYISH
+  font-size: 24px
+
+.summary
+  background: $CYAN_VERY_DARK
+  border-radius: 16px
+  display: grid
+  grid-template-rows: 1fr auto
+  padding: 40px
+
+  @include mobile
+    padding: 40px 24px 24px
+
+.items
+  display: grid
+  align-content: flex-start
+  grid-gap: 16px
+  margin-bottom: 32px
+
+.item
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.name
+  color: white
+
+.person
+  font-size: 80%
+  color: $CYAN_GRAYISH
+
+.price
+  font-size: 48px
+  color: $CYAN_STRONG
+
+  @include mobile
+    font-size: 32px
+
+.button
+  cursor: pointer
+  width: 100%
+  height: var(--input-height)
+  background: $CYAN_STRONG
+  border-radius: var(--input-border-radius)
+  text-transform: uppercase
+  font-size: 20px
+  font-weight: 700
+  color: $CYAN_VERY_DARK
+
+  &:hover
+    background: $CYAN
+
+  &:disabled
+    pointer-events: none
+    opacity: .25

@@ -1,0 +1,47 @@
+@import "styles/colors"
+
+.header
+  display: flex
+  justify-content: space-between
+  margin-bottom: 8px
+
+.container
+  position: relative
+  font-size: 24px
+
+.input
+  width: 100%
+  height: var(--input-height)
+  background: $CYAN_VERY_LIGHT_GRAYISH
+  border: 2px solid transparent
+  border-radius: 6px
+  text-align: right
+  color: $CYAN_VERY_DARK
+  padding: 0 16px
+
+  &:hover, &:focus
+    border-color: $CYAN_STRONG
+
+  &[data-valid="false"]
+    border-color: $RED
+
+.placeholder
+  pointer-events: none
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  line-height: var(--input-height)
+  padding: 0 16px
+  text-align: right
+  color: $CYAN_GRAYISH
+
+.icon
+  pointer-events: none
+  position: absolute
+  top: 0
+  left: 0
+  height: var(--input-height)
+  width: var(--input-height)
+  display: flex
+  background: center no-repeat

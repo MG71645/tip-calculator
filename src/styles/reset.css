@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input {
+  appearance: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  font: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  outline: none;
+}
